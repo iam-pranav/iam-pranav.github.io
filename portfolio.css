@@ -90,7 +90,7 @@ img {
 	}
 }
 
-@media screen and (min-width: 300px) and (max-width: 499px) {
+@media screen and (min-width: 400px) and (max-width: 499px) {
 	.header {
 		flex-flow: column wrap;
 	}
@@ -104,7 +104,30 @@ img {
 		flex:100%;
 	}
 	img {
-		/*margin: 5vw;*/
+		margin: 3vw;
+		width: 80vw;
+	}
+}
+
+@media screen and (min-width: 200px) and (max-width: 399px) {
+	.header {
+		flex-flow: column wrap;
+	}
+	.container {
+		background: radial-gradient(circle, white, green);
+	}
+	.left {
+		flex:100%;
+	}
+	.left .icons {
+		flex-flow: column;
+		justify-content: space-between;
+	}
+	.right {
+		flex:100%;
+	}
+	img {
+		margin: 2vw;
 		width: 80vw;
 	}
 }
