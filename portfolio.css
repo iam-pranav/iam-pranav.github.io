@@ -1,0 +1,110 @@
+
+:root {	
+	font-size: 15px;
+	font-family: 'Titillium Web', sans-serif;	
+}
+
+.container {		
+	display: flex;
+	flex-wrap: wrap;
+	background: linear-gradient(to right, white, green)	
+}
+
+.header {
+	display: flex;
+	flex: 100%;
+	padding: 10px;
+	margin: 10px;
+		
+}
+.header .about {
+	padding: 20px;
+	float: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+div.header:hover,  div.left:hover, div.right:hover, div.base:hover, div.footer:hover{
+	box-shadow: 10px 10px 20px black;
+}
+
+img {
+	margin: 10px;
+	position: relative;
+	height: 50vh;
+	width: 35vw;
+	float: left;
+	border: 2px solid green;
+	box-shadow: 5px 5px 5px green;
+	border-radius: 5px;
+}
+
+.left {
+	flex: 50%;	
+	text-align: center;
+}
+
+.left .icons {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	font-size: 5rem;
+	color: green;
+}
+.right {
+	flex:50%;
+	text-align: center;
+}
+.right .exp {
+	display: flex;
+	flex-direction: column;
+}
+.base {
+	padding: 20px;
+	flex: 100%;
+	font-size: 1.3rem;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center !important;
+}
+.project {
+	display: flex;
+	flex-flow: column wrap;
+
+}
+.footer {
+	flex:100%;
+	text-align: center;
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+	.left {
+		flex:100%;
+	}
+	.right {
+		flex:100%;
+	}
+	.container {
+		background: radial-gradient(circle, white, green);
+	}
+}
+
+@media screen and (min-width: 300px) and (max-width: 499px) {
+	.header {
+		flex-flow: column wrap;
+	}
+	.container {
+		background: radial-gradient(circle, white, green);
+	}
+	.left {
+		flex:100%;
+	}
+	.right {
+		flex:100%;
+	}
+	img {
+		/*margin: 5vw;*/
+		width: 80vw;
+	}
+}
